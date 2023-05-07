@@ -1,0 +1,13 @@
+name: 'gh generated diff'
+author: 'berquerant'
+description: 'Check whether uncommitted diffs are generated'
+inputs:
+  command:
+    description: 'The code generation command'
+    required: true
+  verbose:
+    description: 'If true, prints detailed diffs'
+    default: false
+runs:
+  using: 'node16'
+  main: 'index.js'
